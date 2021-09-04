@@ -3,7 +3,7 @@ public class User {
 
         BankAccount openNew=new BankAccount();
         openNew.setCustAccountNo(12345);
-        openNew.setCustName("Vivek");
+        openNew.setCustName("Vivek Srivastava");
         openNew.setCustEmail("vivek@gmail.com");
         openNew.setCustPhoneNo("9565649427");
         openNew.setCustAccountBal(500);
