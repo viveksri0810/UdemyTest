@@ -2,9 +2,9 @@ public class User {
     public static void main(String[] args) {
 
         BankAccount openNew=new BankAccount();
-        openNew.setCustAccountNo(12345);
+        openNew.setCustAccountNo(123456789);
         openNew.setCustName("Vivek Srivastava");
-        openNew.setCustEmail("vivek@gmail.com");
+        openNew.setCustEmail("vivek.sri1996@gmail.com");
         openNew.setCustPhoneNo("9565649427");
         openNew.setCustAccountBal(500);
 
