@@ -4,3 +4,4 @@ out/production/UdemyTest/
 .idea/.gitignore
 out/production/UdemyTest/User.class
 UdemyTest.iml
+.gitignore
