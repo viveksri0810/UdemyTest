@@ -57,6 +57,7 @@ public class ImpMobile  {
         if (index>=0){
             Contacts temp=contact.get(index);
             contact.remove(index);
+            contact.remove(index);
             System.out.println(temp + " has been removed");
         }
         else {
@@ -72,6 +73,7 @@ public class ImpMobile  {
         for (Contacts con: contact) {
 
             System.out.println(con);
+            System.out.println("my");
         }
 
     }

@@ -28,7 +28,7 @@ public class GroceryList {
     public void modifyGroceryItem(String name,String name1){
         int i=groceryList.indexOf(name);
         if(i<0){
-            System.out.println(name +" not present in list, adding it");
+            System.out.println(name +" not present in list, adding it ");
             addItem(name1);
         }
         else {
@@ -42,6 +42,6 @@ public class GroceryList {
     }
 
     public static void main(String[] args) {
-        System.out.println("this is main method wit string args");
+        System.out.println("this is main method wit string args ");
     }
 }
