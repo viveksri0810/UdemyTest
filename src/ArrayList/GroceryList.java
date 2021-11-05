@@ -36,4 +36,12 @@ public class GroceryList {
             System.out.println(name + " has been modified as " + name1);
         }
     }
+
+    public static void main() {
+        System.out.println("this is main method");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("this is main method wit string args");
+    }
 }
