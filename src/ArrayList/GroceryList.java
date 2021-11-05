@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GroceryList {
 
-    private ArrayList<String> groceryList;
+    private final ArrayList<String> groceryList;
 
     public GroceryList(ArrayList<String> groceryList) {
         this.groceryList = groceryList;
