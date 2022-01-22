@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.Day1;
 
 import Basic.CharAt;
 

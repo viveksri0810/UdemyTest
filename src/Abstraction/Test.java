@@ -1,8 +1,6 @@
 package Abstraction;
 
-public class Test {
+public abstract class Test {
 
-    private void printMyName() {
-        System.out.println("Vivek");
-    }
+    public void printMyName(){System.out.println("Vivek Sri");} ;
 }
