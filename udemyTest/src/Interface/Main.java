@@ -1,7 +1,6 @@
 package Interface;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 public class Main {

@@ -1,7 +1,5 @@
 package Basic;
 
-import Basic.Circle;
-
 public class Cylinder extends Circle {
     private double height;
 

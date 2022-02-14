@@ -1,7 +1,5 @@
 package LeetCode.Day1;
 
-import Basic.CharAt;
-
 public class isPalindrome {
 
     public static void main(String[] args) {

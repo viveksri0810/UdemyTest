@@ -1,7 +1,5 @@
 package Basic;
 
-import Basic.BankAccount;
-
 public class User {
     public static void main(String[] args) {
 
