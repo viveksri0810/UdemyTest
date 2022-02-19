@@ -1,4 +1,4 @@
-package com.vivek.series;
+package Series;
 
 public class Series {
 
