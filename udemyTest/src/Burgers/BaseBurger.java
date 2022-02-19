@@ -2,12 +2,12 @@ package Burgers;
 
 public class BaseBurger {
 
-    private BreadRoll breadRoll;
-    private Meat meat;
-    private Tomato tomato;
-    private Carrot carrot;
-    private Onion onion;
-    private Beetrt beetrt;
+    private final BreadRoll breadRoll;
+    private final Meat meat;
+    private final Tomato tomato;
+    private final Carrot carrot;
+    private final Onion onion;
+    private final Beetrt beetrt;
     private double price;
 
     public BaseBurger(BreadRoll breadRoll, Meat meat, Tomato tomato, Carrot carrot, Onion onion, Beetrt beetrt) {
@@ -51,33 +51,33 @@ public class BaseBurger {
         this.price = price;
     }
 
-    public void addBreadRoll(){
-        this.price+=getBreadRoll().getWhiteBreadRollPrice();
+    public void addBreadRoll() {
+        this.price += getBreadRoll().getWhiteBreadRollPrice();
         System.out.println("WhiteBreadRoll added");
     }
 
-    public void addMeat(){
-        this.price+=getMeat().getPrice();
+    public void addMeat() {
+        this.price += getMeat().getPrice();
         System.out.println("Meat added");
     }
 
-    public void addTomato(){
-        this.price+=getTomato().getPrice();
+    public void addTomato() {
+        this.price += getTomato().getPrice();
         System.out.println("Tomato added");
     }
 
-    public void addCarrot(){
-        this.price+=getCarrot().getPrice();
+    public void addCarrot() {
+        this.price += getCarrot().getPrice();
         System.out.println("Carrot added");
     }
 
-    public void addOnion(){
-        this.price+=getOnion().getPrice();
+    public void addOnion() {
+        this.price += getOnion().getPrice();
         System.out.println("Onion added");
     }
 
-    public void addBeetrt(){
-        this.price+=getBeetrt().getPrice();
+    public void addBeetrt() {
+        this.price += getBeetrt().getPrice();
         System.out.println("Beetrt added");
     }
 }

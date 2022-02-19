@@ -2,8 +2,8 @@ package Composition.PC;
 
 public class Resolution {
 
-    private int height;
-    private int width;
+    private final int height;
+    private final int width;
 
     public Resolution(int height, int width) {
         this.height = height;

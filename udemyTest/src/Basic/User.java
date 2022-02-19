@@ -3,7 +3,7 @@ package Basic;
 public class User {
     public static void main(String[] args) {
 
-        BankAccount openNew=new BankAccount();
+        BankAccount openNew = new BankAccount();
         openNew.setCustAccountNo(123456789);
         openNew.setCustName("Vivek Srivastava");
         openNew.setCustEmail("vivek.sri1996@gmail.com");
@@ -32,5 +32,5 @@ public class User {
 //        System.out.println(cust1.getName() + " "+ cust1.getCreditLimit() + " " + cust1.getEmailAddress());
 //        Basic.VipCustomer cust2=new Basic.VipCustomer("sri",200.00,"sri@gmail.com");
 //        System.out.println(cust2.getName() + " "+ cust2.getCreditLimit() + " " + cust2.getEmailAddress());
-       }
+    }
 }

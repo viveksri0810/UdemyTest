@@ -1,9 +1,9 @@
 package collection;
 
-public class Seat implements  Comparable<Seat> {
+public class Seat implements Comparable<Seat> {
 
-     final private String seatNo;
-     private int status=0;
+    final private String seatNo;
+    private int status = 0;
 
     public Seat(String seatNo) {
         this.seatNo = seatNo;
@@ -16,10 +16,9 @@ public class Seat implements  Comparable<Seat> {
 
     public String getStatus() {
 
-        if(status==0){
+        if (status == 0) {
             return "Empty";
-        }
-        else {
+        } else {
             return "Reserved";
         }
     }
@@ -38,6 +37,6 @@ public class Seat implements  Comparable<Seat> {
 
     @Override
     public int compareTo(Seat s) {
-       return this.seatNo.compareTo(s.getSeatNo());
+        return this.seatNo.compareTo(s.getSeatNo());
     }
 }

@@ -12,7 +12,7 @@ public class Main {
 //            System.out.println(listIterator.next());
 //        }
 
-        Player tim=new Player("Tim",10,15);
+        Player tim = new Player("Tim", 10, 15);
         System.out.println(tim);
         System.out.println(tim.getName());
         System.out.println(tim.getHotPoints());
@@ -38,10 +38,10 @@ public class Main {
             Scanner scan = new Scanner(System.in);
             System.out.println("Please select an option\n" + "0. to exit\n" + "1. to enter string");
             System.out.print("Please enter your option: ");
-            int option=0;
+            int option = 0;
             try {
-                option= scan.nextInt();
-            } catch (Exception InputMismatchException){
+                option = scan.nextInt();
+            } catch (Exception InputMismatchException) {
                 System.out.println("Please enter valid input");
                 throw InputMismatchException;
             }

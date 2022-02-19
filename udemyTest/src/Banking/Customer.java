@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Customer {
 
-    private String name;
-    private ArrayList<Double> transactions;
+    private final String name;
+    private final ArrayList<Double> transactions;
 
     public Customer(String name, double transactions) {
         this.name = name;
@@ -13,7 +13,7 @@ public class Customer {
         addTransaction(transactions);
     }
 
-    public void addTransaction(double amount){
+    public void addTransaction(double amount) {
         this.transactions.add(amount);
     }
 

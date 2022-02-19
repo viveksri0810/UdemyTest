@@ -2,11 +2,11 @@ package Composition.House;
 
 public class Bed {
 
-    private String Size;
-    private String type;
-    private int length;
-    private int width;
-    private int height;
+    private final String Size;
+    private final String type;
+    private final int length;
+    private final int width;
+    private final int height;
 
     public Bed(String size, String type, int length, int width, int height) {
         Size = size;

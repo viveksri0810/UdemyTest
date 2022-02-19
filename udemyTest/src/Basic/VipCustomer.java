@@ -1,19 +1,19 @@
 package Basic;
 
 public class VipCustomer {
- // name , credit limit,email address
+    // name , credit limit,email address
     private String name;
     private double creditLimit;
     private String CustEmail;
 
-    public VipCustomer(){
+    public VipCustomer() {
         System.out.println("default constructor has been called");
     }
 
     public VipCustomer(String name, double creditLimit) {
         this.name = name;
         this.creditLimit = creditLimit;
-        this.CustEmail="default";
+        this.CustEmail = "default";
     }
 
     public VipCustomer(String name, double creditLimit, String emailAddress) {
@@ -26,20 +26,20 @@ public class VipCustomer {
         return name;
     }
 
-    public double getCreditLimit() {
-        return creditLimit;
-    }
-
-    public String getEmailAddress() {
-        return CustEmail;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
+    public double getCreditLimit() {
+        return creditLimit;
+    }
+
     public void setCreditLimit(double creditLimit) {
         this.creditLimit = creditLimit;
+    }
+
+    public String getEmailAddress() {
+        return CustEmail;
     }
 
     public void setEmailAddress(String emailAddress) {

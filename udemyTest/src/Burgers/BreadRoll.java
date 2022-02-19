@@ -1,15 +1,14 @@
 package Burgers;
 
 public class BreadRoll {
-    private double whiteBreadRollPrice;
-    private double brownBreadRollPrice;
+    private final double whiteBreadRollPrice;
+    private final double brownBreadRollPrice;
 
 
-    public BreadRoll(double whiteBreadRollPrice,double brownBreadRollPrice) {
+    public BreadRoll(double whiteBreadRollPrice, double brownBreadRollPrice) {
         this.whiteBreadRollPrice = whiteBreadRollPrice;
-        this.brownBreadRollPrice=brownBreadRollPrice;
+        this.brownBreadRollPrice = brownBreadRollPrice;
     }
-
 
 
     public double getWhiteBreadRollPrice() {

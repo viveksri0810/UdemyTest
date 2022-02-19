@@ -1,14 +1,14 @@
 package Basic;
 
 public class Cylinder extends Circle {
-    private double height;
+    private final double height;
 
     public Cylinder(double radius, double height) {
         super(radius);
-        if(height<0){
-            this.height=0;
-        }else{
-            this.height=height;
+        if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
         }
     }
 
@@ -16,7 +16,7 @@ public class Cylinder extends Circle {
         return height;
     }
 
-    public double getVolume(){
-        return getArea()*getHeight();
+    public double getVolume() {
+        return getArea() * getHeight();
     }
 }

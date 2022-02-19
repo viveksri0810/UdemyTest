@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class Branch {
 
-    private String name;
-    private ArrayList<Customer> customers;
+    private final String name;
+    private final ArrayList<Customer> customers;
 
     public Branch(String name) {
         this.name = name;
-        this.customers=new ArrayList<Customer>();
+        this.customers = new ArrayList<Customer>();
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 

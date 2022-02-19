@@ -2,7 +2,7 @@ package Burgers;
 
 public class Drinks {
 
-    private double price;
+    private final double price;
 
     public Drinks(double price) {
         this.price = price;

@@ -2,21 +2,21 @@ package Composition.PC;
 
 public class Case {
 
-    private String model;
-    private String manufacturer;
-    private String supply;
-    private Dimension dimension;
+    private final String model;
+    private final String manufacturer;
+    private final String supply;
+    private final Dimension dimension;
 
-
-    public void pressPowerButton(){
-        System.out.println("power button is pressed");
-    }
 
     public Case(String model, String manufacturer, String supply, Dimension dimension1) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.supply = supply;
         this.dimension = dimension1;
+    }
+
+    public void pressPowerButton() {
+        System.out.println("power button is pressed");
     }
 
     public String getModel() {

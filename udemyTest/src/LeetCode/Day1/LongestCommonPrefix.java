@@ -1,7 +1,6 @@
 package LeetCode.Day1;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class LongestCommonPrefix {
 
@@ -19,16 +18,16 @@ public class LongestCommonPrefix {
         int i = 0;
 
 
-        while (i < lenth && bol==true) {
+        while (i < lenth && bol == true) {
             int j = 1;
             while (j < strArryLength) {
                 if (strs[0].charAt(i) != strs[j].charAt(i)) {
-                    bol=false;
+                    bol = false;
                     break;
                 }
                 j++;
             }
-            if (!bol){
+            if (!bol) {
                 break;
             }
             i++;

@@ -11,11 +11,11 @@ public class Contacts {
     }
 
     public String getFirstName() {
-        return firstName ;
+        return firstName;
     }
 
     public int getNumber() {
-        return number  ;
+        return number;
     }
 
     @Override

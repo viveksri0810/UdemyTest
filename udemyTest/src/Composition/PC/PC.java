@@ -2,9 +2,9 @@ package Composition.PC;
 
 public class PC {
 
-    private Case theCase;
-    private Monitor monitor;
-    private Motherboard motherboard;
+    private final Case theCase;
+    private final Monitor monitor;
+    private final Motherboard motherboard;
 
     public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
         this.theCase = theCase;

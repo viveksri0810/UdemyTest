@@ -1,8 +1,8 @@
 package Composition.Bedroom;
 
 public class Ceiling {
-    private int height;
-    private int paintedColor;
+    private final int height;
+    private final int paintedColor;
 
     public Ceiling(int height, int paintedColor) {
         this.height = height;

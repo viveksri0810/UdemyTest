@@ -11,10 +11,10 @@ public class Main {
         Carrot carrot = new Carrot(5);
         Onion onion = new Onion(5);
         Beetrt beetrt = new Beetrt(5);
-        Olive olive=new Olive(10);
-        Garlic garlic=new Garlic(5);
-        Chips chips=new Chips(10);
-        Drinks drinks=new Drinks(20);
+        Olive olive = new Olive(10);
+        Garlic garlic = new Garlic(5);
+        Chips chips = new Chips(10);
+        Drinks drinks = new Drinks(20);
 
         System.out.println("*****************Base Burger******************");
         BaseBurger baseBurger = new BaseBurger(breadRoll, meat, tomato, carrot, onion, beetrt);
@@ -31,7 +31,7 @@ public class Main {
 
 
         System.out.println("*****************Healthy Burger******************");
-        HealthyBurger healthyBurger=new HealthyBurger(breadRoll,meat,tomato,carrot,onion,beetrt,olive,garlic);
+        HealthyBurger healthyBurger = new HealthyBurger(breadRoll, meat, tomato, carrot, onion, beetrt, olive, garlic);
         healthyBurger.addBreadRoll();
         System.out.println(healthyBurger.getPrice());
         healthyBurger.addMeat();
@@ -49,7 +49,7 @@ public class Main {
 
 
         System.out.println("*****************Delux Burger******************");
-        DeluxBurger deluxBurger=new DeluxBurger(breadRoll,meat,tomato,carrot,onion,beetrt,chips,drinks);
+        DeluxBurger deluxBurger = new DeluxBurger(breadRoll, meat, tomato, carrot, onion, beetrt, chips, drinks);
         deluxBurger.addBreadRoll();
         System.out.println(deluxBurger.getPrice());
         deluxBurger.addMeat();

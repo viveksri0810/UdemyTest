@@ -49,28 +49,25 @@ public class BankAccount extends VipCustomer {
         this.custAccountNo = custAccountNo;
     }
 
-    public String withdrawlAmount(int amount){
-        if(amount<=0){
+    public String withdrawlAmount(int amount) {
+        if (amount <= 0) {
             return "please enter a valid amount";
-        }
-        else if(custAccountBal<amount){
-            return "Insufficient Balance. Your available account balance is : "+custAccountBal+".";
-        }
-        else if(custAccountBal>=amount){
-            custAccountBal-=amount;
-            return amount+" has been successfully withdrawn and available balance is : "+custAccountBal+".";
-        }
-        else {
+        } else if (custAccountBal < amount) {
+            return "Insufficient Balance. Your available account balance is : " + custAccountBal + ".";
+        } else if (custAccountBal >= amount) {
+            custAccountBal -= amount;
+            return amount + " has been successfully withdrawn and available balance is : " + custAccountBal + ".";
+        } else {
             return "error";
         }
     }
-    public String depositAmount(int amount){
-        if(amount>0){
-            custAccountBal=custAccountBal+amount;
-            return amount+" has been Successfully deposited in account. Available balance is : "+custAccountBal+".";
-        }
-        else {
+
+    public String depositAmount(int amount) {
+        if (amount > 0) {
+            custAccountBal = custAccountBal + amount;
+            return amount + " has been Successfully deposited in account. Available balance is : " + custAccountBal + ".";
+        } else {
             return "Please enter a valid amount.";
-            }
+        }
     }
 }

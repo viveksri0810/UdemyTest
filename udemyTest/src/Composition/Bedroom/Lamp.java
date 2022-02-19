@@ -1,9 +1,9 @@
 package Composition.Bedroom;
 
 public class Lamp {
-    private String style;
-    private boolean battery;
-    private int globRating;
+    private final String style;
+    private final boolean battery;
+    private final int globRating;
 
     public Lamp(String style, boolean battery, int globRating) {
         this.style = style;
@@ -11,7 +11,7 @@ public class Lamp {
         this.globRating = globRating;
     }
 
-    public void turnOn(){
+    public void turnOn() {
         System.out.println("Lamp -> Turning on");
     }
 

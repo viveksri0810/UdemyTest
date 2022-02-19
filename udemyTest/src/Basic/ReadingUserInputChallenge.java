@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class ReadingUserInputChallenge {
 
     public static void main(String[] args) {
-        int i=1;
-        int sum=0;
+        int i = 1;
+        int sum = 0;
         System.out.println("please enter 10 numbers");
-        Scanner scan =new Scanner(System.in);
-        while(i<=10){
-            System.out.print("Enter number "+ i + " : ");
-            boolean hasNextInt=scan.hasNextInt();
- //           System.out.println();
-            if(hasNextInt){
+        Scanner scan = new Scanner(System.in);
+        while (i <= 10) {
+            System.out.print("Enter number " + i + " : ");
+            boolean hasNextInt = scan.hasNextInt();
+            //           System.out.println();
+            if (hasNextInt) {
                 sum += scan.nextInt();
-            }else {
+            } else {
                 System.out.println("Invalid Number, Please enter a valid number");
                 i--;
 //                System.out.print("Enter number "+ i + " : ");
@@ -25,6 +25,6 @@ public class ReadingUserInputChallenge {
             i++;
         }
         scan.close();
-        System.out.println("Sum of number is : "+ sum);
+        System.out.println("Sum of number is : " + sum);
     }
 }

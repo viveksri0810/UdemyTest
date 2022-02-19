@@ -2,10 +2,10 @@ package Composition.House;
 
 public class Wall {
 
-    private int lenght;
-    private int height;
-    private String Color;
-    private String direction;
+    private final int lenght;
+    private final int height;
+    private final String Color;
+    private final String direction;
 
     public Wall(int lenght, int height, String color, String direction) {
         this.lenght = lenght;

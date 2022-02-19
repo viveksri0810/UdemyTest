@@ -6,9 +6,9 @@ public class Main {
         int a = AccessModifireInterface.a1;
         int b = IAccessModifireInterface.b1;
 
-          int f;
+        int f;
 
-        IAccessModifireInterface c=new IAccessModifireInterface();
+        IAccessModifireInterface c = new IAccessModifireInterface();
         c.myname();
         int a3 = c.a;
 
@@ -18,14 +18,14 @@ public class Main {
 
     }
 
-    public void hewo(){
-        System.out.println("sdf");
-        int a;
-    }
-
-    public static  void asw(){
+    public static void asw() {
 
         int a22;
+    }
+
+    public void hewo() {
+        System.out.println("sdf");
+        int a;
     }
 
 }

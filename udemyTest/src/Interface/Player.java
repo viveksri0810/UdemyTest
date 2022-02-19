@@ -2,7 +2,7 @@ package Interface;
 
 import java.util.ArrayList;
 
-public class Player implements  ISavable{
+public class Player implements ISavable {
 
     private String name;
     private int hitPoints;
@@ -20,28 +20,28 @@ public class Player implements  ISavable{
         return name;
     }
 
-    public int getHotPoints() {
-        return hitPoints;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public String getWeapon() {
-        return weapon;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getHotPoints() {
+        return hitPoints;
     }
 
     public void setHotPoints(int hotPoints) {
         this.hitPoints = hotPoints;
     }
 
+    public int getStrength() {
+        return strength;
+    }
+
     public void setStrength(int strength) {
         this.strength = strength;
+    }
+
+    public String getWeapon() {
+        return weapon;
     }
 
     public void setWeapon(String weapon) {
@@ -62,21 +62,21 @@ public class Player implements  ISavable{
     @Override
     public ArrayList<String> write() {
 
-        ArrayList<String> values=new ArrayList<>();
-        values.add(0,this.name);
-        values.add(1,""+this.hitPoints);
-        values.add(2,""+this.strength);
-        values.add(3,this.weapon);
+        ArrayList<String> values = new ArrayList<>();
+        values.add(0, this.name);
+        values.add(1, "" + this.hitPoints);
+        values.add(2, "" + this.strength);
+        values.add(3, this.weapon);
         return values;
     }
 
     @Override
     public void read(ArrayList<String> savedValues) {
-        if(savedValues!=null & savedValues.size()>0){
-            this.name=savedValues.get(0);
-            this.hitPoints=Integer.parseInt(savedValues.get(1));
-            this.strength=Integer.parseInt(savedValues.get(2));
-            this.weapon=savedValues.get(3);
+        if (savedValues != null & savedValues.size() > 0) {
+            this.name = savedValues.get(0);
+            this.hitPoints = Integer.parseInt(savedValues.get(1));
+            this.strength = Integer.parseInt(savedValues.get(2));
+            this.weapon = savedValues.get(3);
 
         }
 

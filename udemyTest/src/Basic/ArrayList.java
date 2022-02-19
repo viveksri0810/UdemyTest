@@ -9,7 +9,7 @@ public class ArrayList {
     }
 }
 
-class GroceryList{
+class GroceryList {
 
     private int[] num;
 

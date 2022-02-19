@@ -2,9 +2,9 @@ package Composition.PC;
 
 public class Dimension {
 
-    private double length;
-    private double width;
-    private double height;
+    private final double length;
+    private final double width;
+    private final double height;
 
     public Dimension(double length, double width, double height) {
         this.length = length;

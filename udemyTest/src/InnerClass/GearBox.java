@@ -2,8 +2,8 @@ package InnerClass;
 
 public class GearBox {
 
-    public void changeGear(int gear){
-        Gear setGear=new Gear();
+    public void changeGear(int gear) {
+        Gear setGear = new Gear();
 
         switch (gear) {
             case 1:
@@ -12,7 +12,7 @@ public class GearBox {
                 break;
 
             case 2:
-                currentGear =setGear.getGear2();
+                currentGear = setGear.getGear2();
                 System.out.println("Current Gear : " + currentGear);
                 break;
 
@@ -27,7 +27,7 @@ public class GearBox {
                 break;
 
             case 5:
-                currentGear =setGear.getGear5();
+                currentGear = setGear.getGear5();
                 System.out.println("Current Gear : " + currentGear);
                 break;
 
@@ -40,15 +40,14 @@ public class GearBox {
     }
 
 
-
     public static class Gear {
 
-        final int gear1=1;
-        final int gear2=2;
-        final int gear3=3;
-        final int gear4=4;
-        final int gear5=5;
-        final int reverse=0;
+        final int gear1 = 1;
+        final int gear2 = 2;
+        final int gear3 = 3;
+        final int gear4 = 4;
+        final int gear5 = 5;
+        final int reverse = 0;
 
         public int getGear1() {
             return gear1;

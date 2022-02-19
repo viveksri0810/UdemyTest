@@ -2,10 +2,10 @@ package Composition.PC;
 
 public class Monitor {
 
-    private String model;
-    private String Manufacturer;
-    private int size;
-    private Resolution native_resolution;
+    private final String model;
+    private final String Manufacturer;
+    private final int size;
+    private final Resolution native_resolution;
 
     public Monitor(String model, String manufacturer, int size, Resolution native_resolution) {
         this.model = model;
@@ -30,7 +30,7 @@ public class Monitor {
         return native_resolution;
     }
 
-    public void drawPixelAt(int x, int y,String color){
-        System.out.println("drawing pixel at "+x+","+y+ " in color "+ color);
+    public void drawPixelAt(int x, int y, String color) {
+        System.out.println("drawing pixel at " + x + "," + y + " in color " + color);
     }
 }

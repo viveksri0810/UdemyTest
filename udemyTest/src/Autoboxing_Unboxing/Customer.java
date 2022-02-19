@@ -6,13 +6,14 @@ public class Customer {
 
     private final String name;
     private ArrayList<Double> doubleArrayList;
+
     public Customer(String name) {
         this.name = name;
     }
 
-    public Customer(String name,double amt) {
-        this.name=name;
-        doubleArrayList=new ArrayList<>();
+    public Customer(String name, double amt) {
+        this.name = name;
+        doubleArrayList = new ArrayList<>();
         this.doubleArrayList.add(amt);
 
     }
@@ -32,10 +33,10 @@ public class Customer {
 
     @Override
     public String toString() {
-        return '\n'+"Customer{" +
+        return '\n' + "Customer{" +
                 "name='" + name + '\'' +
                 ", doubleArrayList=" + doubleArrayList +
-                '}'  ;
+                '}';
 
     }
 }

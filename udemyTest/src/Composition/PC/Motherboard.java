@@ -2,15 +2,11 @@ package Composition.PC;
 
 public class Motherboard {
 
-    private String model;
-    private String manufacturer;
-    private int ramSlot;
-    private int cardSlot;
-    private String  bios;
-
-    public void loadProgram(String programName){
-        System.out.println("Program "+programName +" is loading.....");
-    }
+    private final String model;
+    private final String manufacturer;
+    private final int ramSlot;
+    private final int cardSlot;
+    private final String bios;
 
     public Motherboard(String model, String manufacturer, int ramSlot, int cardSlot, String bios) {
         this.model = model;
@@ -18,6 +14,10 @@ public class Motherboard {
         this.ramSlot = ramSlot;
         this.cardSlot = cardSlot;
         this.bios = bios;
+    }
+
+    public void loadProgram(String programName) {
+        System.out.println("Program " + programName + " is loading.....");
     }
 
     public String getModel() {

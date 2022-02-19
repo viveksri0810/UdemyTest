@@ -1,9 +1,9 @@
 package Basic;
 
 public class Vehicle {
-    private String steering;
-    private int noOfSeat;
-    private String color;
+    private final String steering;
+    private final int noOfSeat;
+    private final String color;
 
     public Vehicle(String steering, int noOfSeat, String color) {
         this.steering = steering;

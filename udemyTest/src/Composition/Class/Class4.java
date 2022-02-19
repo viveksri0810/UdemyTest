@@ -2,8 +2,8 @@ package Composition.Class;
 
 public class Class4 {
 
-    private Class2 class2;
-    private Class3 class3;
+    private final Class2 class2;
+    private final Class3 class3;
 
     public Class4(Class2 class2, Class3 class3) {
         this.class2 = class2;

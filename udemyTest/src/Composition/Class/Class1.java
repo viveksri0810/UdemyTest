@@ -1,9 +1,9 @@
 package Composition.Class;
 
 public class Class1 {
-    private int a;
-    private int b;
-    private int c;
+    private final int a;
+    private final int b;
+    private final int c;
 
     public Class1(int a, int b, int c) {
         this.a = a;

@@ -18,25 +18,26 @@ public class ComplexNumber {
         return this.imaginary;
     }
 
-    public void add(double real, double imaginary){
-            this.real +=real;
-            this.imaginary +=imaginary;
+    public void add(double real, double imaginary) {
+        this.real += real;
+        this.imaginary += imaginary;
     }
 
-    public void add(ComplexNumber complexNumber){
+    public void add(ComplexNumber complexNumber) {
 
-        this.real +=complexNumber.getReal();
+        this.real += complexNumber.getReal();
         this.imaginary += complexNumber.getImaginary();
 
     }
 
-    public  void subtract(double real, double imaginary){
-        this.real -=real;
-        this.imaginary -=imaginary;
+    public void subtract(double real, double imaginary) {
+        this.real -= real;
+        this.imaginary -= imaginary;
     }
-    public void subtract(ComplexNumber complexNumber){
 
-        this.real -=complexNumber.getReal();
+    public void subtract(ComplexNumber complexNumber) {
+
+        this.real -= complexNumber.getReal();
         this.imaginary -= complexNumber.getImaginary();
 
     }

@@ -4,21 +4,20 @@ public class Wall {
     double width;
     double height;
 
-    public Wall(){
+    public Wall() {
 
     }
-    public Wall(double width, double height){
-        if (width<=0){
-            this.width=0;
+
+    public Wall(double width, double height) {
+        if (width <= 0) {
+            this.width = 0;
+        } else {
+            this.width = width;
         }
-        else{
-            this.width=width;
-        }
-        if(height<=0){
-            this.height=0;
-        }
-        else{
-            this.height=height;
+        if (height <= 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
         }
     }
 
@@ -27,11 +26,10 @@ public class Wall {
     }
 
     public void setWidth(double width) {
-        if (width<=0){
-            this.width=0;
-        }
-        else{
-            this.width=width;
+        if (width <= 0) {
+            this.width = 0;
+        } else {
+            this.width = width;
         }
     }
 
@@ -40,16 +38,15 @@ public class Wall {
     }
 
     public void setHeight(double height) {
-        if(height<=0){
-            this.height=0;
-        }
-        else{
-            this.height=height;
+        if (height <= 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
         }
     }
 
-    public double getArea(){
-        return this.height*this.width;
+    public double getArea() {
+        return this.height * this.width;
     }
 
 }

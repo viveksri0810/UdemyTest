@@ -2,10 +2,10 @@ package Composition.House;
 
 public class Telivision {
 
-    private String Manufacturer;
-    private String color;
-    private int YearOfManufacturing;
-    private int size;
+    private final String Manufacturer;
+    private final String color;
+    private final int YearOfManufacturing;
+    private final int size;
 
     public Telivision(String manufacturer, String color, int yearOfManufacturing, int size) {
         Manufacturer = manufacturer;
@@ -30,15 +30,15 @@ public class Telivision {
         return size;
     }
 
-    public void turnOnTv(){
+    public void turnOnTv() {
         System.out.println("TV is switched ON");
     }
 
-    public void turnOffTv(){
+    public void turnOffTv() {
         System.out.println("Turned off TV");
     }
 
-    public void changeChannel(){
+    public void changeChannel() {
         System.out.println("Changing channel");
     }
 }

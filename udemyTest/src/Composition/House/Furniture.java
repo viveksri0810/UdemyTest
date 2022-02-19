@@ -2,9 +2,9 @@ package Composition.House;
 
 public class Furniture {
 
-    private String manufacturer;
-    private String Model;
-    private String Color;
+    private final String manufacturer;
+    private final String Model;
+    private final String Color;
 
     public Furniture(String manufacturer, String model, String color) {
         this.manufacturer = manufacturer;

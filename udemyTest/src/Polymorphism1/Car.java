@@ -1,26 +1,27 @@
 package Polymorphism1;
 
 public class Car {
-    private String name;
-    private boolean engine;
-    private int cylinder;
-    private int wheels;
+    private final String name;
+    private final boolean engine;
+    private final int cylinder;
+    private final int wheels;
 
     public Car(String name, int cylinder) {
         this.name = name;
         this.cylinder = cylinder;
-        this.engine=true;
-        this.wheels=4;
+        this.engine = true;
+        this.wheels = 4;
     }
-    public String startEngine(){
+
+    public String startEngine() {
         return "Car -> startEngine()";
     }
 
-    public  String accelerate(){
+    public String accelerate() {
         return "Car -> accelerate()";
     }
 
-    public String brake(){
+    public String brake() {
         return "Car -> brake()";
     }
 
@@ -34,7 +35,7 @@ public class Car {
 }
 
 
-class Mitsubishi extends Car{
+class Mitsubishi extends Car {
 
     public Mitsubishi(String name, int cylinder) {
         super(name, cylinder);
@@ -56,7 +57,7 @@ class Mitsubishi extends Car{
     }
 }
 
-class Holden extends Car{
+class Holden extends Car {
 
     public Holden(String name, int cylinder) {
         super(name, cylinder);
@@ -78,7 +79,7 @@ class Holden extends Car{
     }
 }
 
-class Ford extends Car{
+class Ford extends Car {
 
     public Ford(String name, int cylinder) {
         super(name, cylinder);

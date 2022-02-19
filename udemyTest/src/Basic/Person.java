@@ -10,11 +10,10 @@ public class Person {
     }
 
     public void setAge(int age) {
-        if(age>=0 || age<=100){
+        if (age >= 0 || age <= 100) {
             this.age = age;
-        }
-        else{
-            this.age=0;
+        } else {
+            this.age = 0;
         }
 
     }
@@ -35,23 +34,16 @@ public class Person {
         this.firstName = firstName;
     }
 
-    public boolean isTeen(){
-        if(age>12 || age<20){
-            return true;
-        }
-        else{
-            return false;
-        }
+    public boolean isTeen() {
+        return age > 12 || age < 20;
     }
 
-    public String getFullName(){
-        if(firstName.isEmpty() && lastName.isEmpty()){
+    public String getFullName() {
+        if (firstName.isEmpty() && lastName.isEmpty()) {
             return "";
-        }
-        else if(lastName.isEmpty()){
+        } else if (lastName.isEmpty()) {
             return lastName;
-        }
-        else {
+        } else {
             return firstName;
         }
     }

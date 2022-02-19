@@ -1,18 +1,17 @@
 package Composition.Class;
 
 public class Class2 {
-    private int d;
-    private int e;
-    private int f;
-    private Class1 class1;
+    private final int d;
+    private final int e;
+    private final int f;
+    private final Class1 class1;
 
 
-
-    public Class2(int d, int e, int f,int a,int b, int c) {
+    public Class2(int d, int e, int f, int a, int b, int c) {
         this.d = d;
         this.e = e;
         this.f = f;
-        class1=new Class1(a,b,c);
+        class1 = new Class1(a, b, c);
     }
 
     public int getD() {

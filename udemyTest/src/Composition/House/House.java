@@ -2,23 +2,23 @@ package Composition.House;
 
 public class House {
 
-    private int length;
-    private int height;
-    private String color;
-    private Furniture furniture;
-    private Bed bed;
-    private Wall wall;
-    private Telivision telivision;
+    private final int length;
+    private final int height;
+    private final String color;
+    private final Furniture furniture;
+    private final Bed bed;
+    private final Wall wall;
+    private final Telivision telivision;
 
 
-    public House(int length, int height, String color, Furniture furniture, Bed bed, Wall wall,Telivision telivision) {
+    public House(int length, int height, String color, Furniture furniture, Bed bed, Wall wall, Telivision telivision) {
         this.length = length;
         this.height = height;
         this.color = color;
         this.furniture = furniture;
         this.bed = bed;
         this.wall = wall;
-        this.telivision=telivision;
+        this.telivision = telivision;
     }
 
     public int getLength() {

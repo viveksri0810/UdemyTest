@@ -1,7 +1,7 @@
 package Burgers;
 
 public class Chips {
-    private double price;
+    private final double price;
 
     public Chips(double price) {
         this.price = price;
