@@ -11,6 +11,9 @@ public class Theater {
     int totalNoColumn;
     ArrayList<Seat> noOfSeat;
 
+
+
+
     public Theater(String theaterName, int totalNoRow, int totalNoColumn) throws IOException {
         this.theaterName = theaterName;
         if (totalNoColumn >= 1 && totalNoColumn <= 26) {
@@ -25,7 +28,7 @@ public class Theater {
         for (int i = 1; i <= totalNoColumn; i++) {
 
             for (int j = 1; j <= totalNoRow; j++) {
-                noOfSeat.add(new Seat(a + "" + j));
+                noOfSeat.add(new Seat(a + "" + String.format("%02d",j)));
             }
             a++;
         }
